@@ -20,6 +20,11 @@ img {
     width: 100%;
 }
 
+body {
+    width: 90%;
+    margin-inline: auto;
+}
+
 // ------ Media  -------------------------------
 $mobile: 350px;
 @mixin Mobile {
@@ -103,6 +108,7 @@ header {
         background-color: grey;
         width: 50%;
         height: 100vh;
+        z-index: 99;
 
         transform: translateX(100%);
         transition: transform .5s ease-in-out;
@@ -180,7 +186,7 @@ header {
 
 .feature {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px),1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px),1fr));
     gap: 1em;
     margin-top: 4em;
 
